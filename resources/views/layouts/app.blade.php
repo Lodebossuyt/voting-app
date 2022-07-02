@@ -45,7 +45,45 @@
        </header>
     <main class="container mx-auto max-w-custom flex">
         <div class="w-70 mr-5">
-            Add idea form comes here, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut dolorum eos et exercitationem fuga molestiae nesciunt pariatur quas repellendus saepe, velit! Amet at impedit ipsum mollitia sed, sunt ullam.
+            <div class="bg-white border-2 border-blue-200
+            rounded-xl mt-16">
+                <div class="text-center px-6 py-2 pt-6">
+                    <h3 class="font-semibold text-base">Add an idea</h3>
+                    <p class="text-sm mt-4">Let us now what you would like and we'll take a look over!</p>
+                </div>
+                <form action="" class="space-y-4 px-4 py-6">
+                    <div>
+                        <input type="text" class="text-sm w-full bg-gray-100 rounded-xl placeholder-gray-900 px-4 py-2 border-none" placeholder="Your idea">
+                    </div>
+                    <div>
+                        <select name="category_add" id="category_add" class="w-full bg-gray-100 text-sm rounded-xl px-4 py-2 border-none">
+                            <option value="Category one">Category One</option>
+                            <option value="Category one">Category Two</option>
+                            <option value="Category one">Category Three</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea placeholder="Describe your idea" name="idea" id="idea" cols="30" rows="4" class="w-full bg-gray-100 rounded-xl placeholder-gray-900 border-none text-sm px-4 py-2"></textarea>
+                    </div>
+                    <div class="flex items-center justify-between space-x-3">
+                        <button
+                            type="button"
+                            class="flex items-center justify-center w-1/2 h-11 text-sm bg-gray-200 font-semibold rounded-xl border border-gray-200 hover:border-gray-400 transition duration-150 ease-in px-6 py-3"
+                        >
+                            <svg class="h-5 w-5 text-gray-600 -rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+                            </svg>
+                            <span class="ml-1">Attach</span>
+                        </button>
+                        <button
+                            type="submit"
+                            class="flex items-center justify-center w-1/2 h-11 text-sm bg-blue-500 font-semibold rounded-xl border border-blue-500 hover:bg-blue-700 transition duration-150 ease-in px-6 py-3"
+                        >
+                            <span class="text-white">Submit</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="w-175">
             <nav class="flex items-center justify-between text-xs">
