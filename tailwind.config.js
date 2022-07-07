@@ -33,4 +33,16 @@ module.exports = {
         require('@tailwindcss/forms'),
         require('@tailwindcss/line-clamp')
     ],
+    purge: {
+        content: [
+            './storage/framework/views/*.php',
+            './resources/**/*.blade.php',
+        ],
+        safelist: [
+            'bg-purple-500',
+            'bg-yellow-500',
+            'bg-green-500',
+            'bg-red-500',
+        ],
+    },
 };
