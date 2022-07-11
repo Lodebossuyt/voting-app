@@ -9,10 +9,18 @@ class IdeaShow extends Component
 {
     public $idea;
     public $votesCount;
+    public $hasVoted;
 
     public function mount(Idea $idea, $votesCount){
         $this->idea = $idea;
         $this->votesCount = $votesCount;
+        $this->hasVoted = $idea->isVotedByUser(auth()->user());
+    }
+
+    public function vote(){
+        if(! auth()->check()){
+            return redirect()->route('login');
+        }
     }
 
     public function render()
