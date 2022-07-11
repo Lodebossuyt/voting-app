@@ -18,12 +18,12 @@
 
             <div class="mt-8">
                 @if($hasVoted)
-                    <button class="w-20 bg-blue-600 text-white border border-blue-600 hover:border-blue-700
+                    <button wire:click.prevent="vote" class="w-20 bg-blue-600 text-white border border-blue-600 hover:border-blue-700
                     transition duration-150 ease-in font-bold text-xs uppercase rounded-xl px-4 py-3">
                         voted
                     </button>
                 @else
-                    <button class="w-20 bg-gray-200 border border-gray-200 hover:border-gray-400 transition duration-150 ease-in font-bold text-xs uppercase rounded-xl px-4 py-3">
+                    <button wire:click.prevent="vote" class="w-20 bg-gray-200 border border-gray-200 hover:border-gray-400 transition duration-150 ease-in font-bold text-xs uppercase rounded-xl px-4 py-3">
                         vote
                     </button>
                 @endif
@@ -79,12 +79,12 @@
                             </div>
                         </div>
                         @if($hasVoted)
-                            <button class="w-20 -ml-5 bg-blue-600 border border-blue-600 font-bold text-xs uppercase rounded-xl hover:border-blue-700
+                            <button wire:click.prevent="vote" class="w-20 -ml-5 bg-blue-600 border border-blue-600 font-bold text-xs uppercase rounded-xl hover:border-blue-700
                                             transition duration-150 ease-in px-4 py-3">
                                 Voted
                             </button>
                         @else
-                            <button class="w-20 -ml-5 bg-gray-200 border border-gray-200 font-bold text-xs uppercase rounded-xl hover:border-gray-400
+                            <button wire:click.prevent="vote" class="w-20 -ml-5 bg-gray-200 border border-gray-200 font-bold text-xs uppercase rounded-xl hover:border-gray-400
                                             transition duration-150 ease-in px-4 py-3">
                                 Vote
                             </button>

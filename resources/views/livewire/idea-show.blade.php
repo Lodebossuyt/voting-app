@@ -57,12 +57,12 @@
                                 </div>
                             </div>
                             @if($hasVoted)
-                                <button class="w-20 -ml-5 bg-blue-600 text-white border border-blue-600 font-bold text-xs uppercase rounded-xl hover:border-blue-700
+                                <button wire:click.prevent="vote" class="w-20 -ml-5 bg-blue-600 text-white border border-blue-600 font-bold text-xs uppercase rounded-xl hover:border-blue-700
                                             transition duration-150 ease-in px-4 py-3">
                                     Voted
                                 </button>
                             @else
-                                <button class="w-20 -ml-5 bg-gray-200 border border-gray-200 font-bold text-xs uppercase rounded-xl hover:border-gray-400
+                                <button wire:click.prevent="vote" class="w-20 -ml-5 bg-gray-200 border border-gray-200 font-bold text-xs uppercase rounded-xl hover:border-gray-400
                                             transition duration-150 ease-in px-4 py-3">
                                     Vote
                                 </button>
@@ -217,14 +217,14 @@
                     <div class="text-gray-400 text-sm leading-none">votes</div>
                 </div>
                 @if($hasVoted)
-                    <button
+                    <button wire:click.prevent="vote"
                         type="button"
                         class="w-32 h-11 text-sm text-white bg-blue-600 uppercase font-semibold rounded-xl border border-blue-600 hover:border-blue-700 transition duration-150 ease-in px-6 py-3"
                     >
                         <span class="mr-2">Voted</span>
                     </button>
                 @else
-                    <button
+                    <button wire:click.prevent="vote"
                         type="button"
                         class="w-32 h-11 text-sm bg-gray-200 uppercase font-semibold rounded-xl border border-gray-200 hover:border-gray-400 transition duration-150 ease-in px-6 py-3"
                     >
